@@ -1,6 +1,6 @@
 # Currency converter bot
 
-Telegram bot for tracking crypto and money rate currency.
+Telegram bot for tracking rate of cryptocurrency.
 
 ## Setup Instructions
 
@@ -9,5 +9,15 @@ Telegram bot for tracking crypto and money rate currency.
 ```bash
 pip install -r requirements.txt
 ```
+### Start Server
 
+To start the web server you need to run the following sequence of commands.
+
+```bash 
+cd currency_converter_bot
+```
+Next run the bot.
+```bash
+python main.py
+```
 

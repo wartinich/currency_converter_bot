@@ -9,7 +9,11 @@ Telegram bot for tracking rate of cryptocurrency.
 ```bash
 pip install -r requirements.txt
 ```
-Put your bot_token in your.env
+### Install a token
+Create .env file in root directory and add following values:
+```dotenv
+TOKEN=<your_telegram_bot_token> 
+```
 ### Start Server
 
 To start the web server you need to run the following sequence of commands.

@@ -26,7 +26,7 @@ async def crypto_rate(message: types.Message):
 
 
 #money rate
-@dp.message_handler(Text(equals='💰Курс доллара'))
+@dp.message_handler(Text(equals='💰Курс валют'))
 async def money_rate(message: types.Message):
     dollar = convert(base='USD', amount=1, to=['UAH'])
     euro = convert(base='EUR', amount=1, to=['UAH'])
@@ -42,13 +42,13 @@ async def handler_keyboard(message: types.Message):
     elif message.text == "💰Курс валют":
         await message.answer('Dollar')
     elif message.text == "▶Далее":
-        await message.answer('Далее' ,reply_markup=menu)
+        await message.answer('Раздел аналитики' ,reply_markup=menu)
     elif message.text == '💼Кошелек':
         await message.answer('Balance')
     elif message.text == '📊Статистика':
         await message.answer('Balance')
     elif message.text == '◀Назад':
-        await message.answer('Назад', reply_markup=main)
+        await message.answer('Вы вернулись в главное меню', reply_markup=main)
 
 
 @dp.message_handler()
